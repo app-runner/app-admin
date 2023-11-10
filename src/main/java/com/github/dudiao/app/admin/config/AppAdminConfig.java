@@ -15,9 +15,9 @@ import javax.sql.DataSource;
 @Configuration
 public class AppAdminConfig {
 
-  @Bean(name = AnnoConstants.DEFAULT_DATASOURCE_NAME, typed = true)
-  public DataSource dataSource(@Inject("${db.main}") HikariDataSource ds) {
-    return ds;
-  }
+    @Bean(name = AnnoConstants.DEFAULT_DATASOURCE_NAME, typed = true)
+    public DataSource dataSource(@Inject("${db.main}") HikariDataSource ds) {
+        return ds;
+    }
 
 }
