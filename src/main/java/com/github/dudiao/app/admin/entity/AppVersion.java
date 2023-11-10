@@ -22,8 +22,8 @@ public class AppVersion extends BaseMetaModel {
   @AnnoField(title = "版本号", edit = @AnnoEdit(notNull = true))
   private String version;
 
-  @AnnoField(title = "版本号数字", edit = @AnnoEdit(placeHolder = "用来比较版本号的大小，数字越大，版本越高（越新）", notNull = true))
-  private Long versionNum = 0L;
+  @AnnoField(title = "版本号数字", edit = @AnnoEdit(placeHolder = "用来比较版本号的大小，数字越大，版本越高（越新）", notNull = true), defaultValue = "0")
+  private Long versionNum;
 
   @AnnoField(
       title = "状态", edit = @AnnoEdit, optionType = @AnnoOptionType({

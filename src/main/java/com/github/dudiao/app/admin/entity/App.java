@@ -46,8 +46,8 @@ public class App extends BaseMetaModel {
       @AnnoOptionType.OptionData(label = "审批拒绝", value = "2")}))
   private Integer status;
 
-  @AnnoField(title = "权重", edit = @AnnoEdit(placeHolder = "数值越大，权重越高", addEnable = false, editEnable = false), show = false)
-  private Long weight = 0L;
+  @AnnoField(title = "权重", edit = @AnnoEdit(placeHolder = "数值越大，权重越高", addEnable = false, editEnable = false), show = false, defaultValue = "0")
+  private Long weight;
 
   @AnnoField(title = "描述", edit = @AnnoEdit(), show = false, dataType = AnnoDataType.RICH_TEXT)
   private String description;
