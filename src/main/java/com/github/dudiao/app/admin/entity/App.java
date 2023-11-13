@@ -38,6 +38,9 @@ public class App extends BaseMetaModel {
         @AnnoOptionType.OptionData(label = "Python", value = "python")}), search = @AnnoSearch(), edit = @AnnoEdit(notNull = true))
     private String appType;
 
+    @AnnoField(title = "最新版本", edit = @AnnoEdit)
+    private String latestVersion;
+
     @AnnoField(title = "应用运行时依赖的最低版本", edit = @AnnoEdit)
     private String requiredRuntimeVersion;
 
